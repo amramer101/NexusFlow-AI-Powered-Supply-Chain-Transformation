@@ -45,7 +45,7 @@ The architecture is designed for **security, scalability, and performance**:
 
 ### Architecture Diagram
 
-![NexusFlow Architecture](https://github.com/ammr102/NexusFlow/blob/main/1735316588109.jpeg "NexusFlow Architecture")
+![NexusFlow Architecture](1735316588109.jpeg "NexusFlow Architecture")
 *Figure: Multi-layered AI-powered supply chain architecture on Huawei Cloud*
 
 ---
