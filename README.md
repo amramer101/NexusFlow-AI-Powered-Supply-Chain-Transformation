@@ -5,7 +5,6 @@
 ![Docker](https://img.shields.io/badge/Docker-Blue?logo=docker\&logoColor=white)
 ![CI/CD](https://img.shields.io/badge/CI/CD-Pipelines-blueviolet)
 ![Availability](https://img.shields.io/badge/Availability-99.95%25-brightgreen)
-![Cost Savings](https://img.shields.io/badge/Cost-Saving-20%25-yellowgreen)
 
 ---
 
