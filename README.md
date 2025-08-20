@@ -1,63 +1,60 @@
-# 🤖 NexusFlow - AI-Powered Supply Chain Transformation
+# 💰 Azure FinOps Sentinel — Intelligent Cloud Cost Optimization
 
-![Huawei Cloud](https://img.shields.io/badge/Huawei-Cloud-red?logo=huawei\&logoColor=white)
+![Azure](https://img.shields.io/badge/Azure-Cloud-blue?logo=microsoftazure\&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-DarkBlue?logo=python\&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-Blue?logo=docker\&logoColor=white)
-![CI/CD](https://img.shields.io/badge/CI/CD-Pipelines-blueviolet)
-![Availability](https://img.shields.io/badge/Availability-99.95%25-brightgreen)
+![Serverless](https://img.shields.io/badge/Serverless-Yes-lightgrey)
+![Automation](https://img.shields.io/badge/Automation-Enabled-green)
 
 ---
 
 ## 🌟 Project Overview
 
-**NexusFlow** is a **multi-layered, AI-driven supply chain platform** built on **Huawei Cloud**.
-It leverages ECS, RDS, OBS, ModelArts, API Gateway, and WAF to deliver **real-time data ingestion, AI forecasting, and secure supply chain operations**.
+**Azure FinOps Sentinel** is a **fully serverless FinOps governance solution** on **Azure**, designed to **detect under-utilized resources** and **optimize cloud spend** automatically.
 
-The platform is fully aligned with the **Well-Architected Framework**’s five pillars:
-**Reliability, Security, Performance Efficiency, Cost Optimization, Operational Excellence**.
+It ensures **zero-credential drift** using Managed Identities and provides **real-time HTML reporting** to stakeholders through Azure Logic Apps.
 
 ---
 
 ## 🚀 Key Achievements
 
-* 📈 Reduced stockouts and overstock by **25%** via AI-driven forecasting models in ModelArts.
-* 🔒 Implemented **security controls**: WAF rules, OBS encryption, and RBAC for end-to-end data protection.
-* ⚡ Supported **1,000+ concurrent users** with **99.95% system availability**.
-* 💰 Cut operational costs by **20%** using dynamic resource provisioning and autoscaling.
-* 👥 Led a **cross-functional team of 4 engineers**, integrating real-time pipelines via API Gateway.
+* 🛠 Developed a **Python Azure Function** that scans every 6 hours for:
+
+  * VMs with <10% CPU over 7 days
+  * Unattached disks
+  * Unused IPs
+* 🏷 Automated tagging (`FinOps-Status`) for governance.
+* 📊 HTML reporting pipeline archives reports to **Azure Blob Storage** and notifies stakeholders via **Logic Apps**.
+* 🔍 Identified and remediated **50+ waste candidates** in the first week.
 
 ---
 
 ## 🏗️ Architecture Overview
 
-The architecture is designed for **security, scalability, and performance**:
-
-| Component           | Description                                             |
-| ------------------- | ------------------------------------------------------- |
-| **ECS**             | Compute layer hosting microservices                     |
-| **RDS**             | Relational database for transactional data              |
-| **OBS**             | Object storage for files and backups, encrypted at rest |
-| **ModelArts**       | AI forecasting models for supply chain optimization     |
-| **API Gateway**     | Handles real-time data ingestion securely               |
-| **WAF**             | Web Application Firewall for security enforcement       |
-| **CI/CD Pipelines** | Automated build, test, and deployment of services       |
+| Component                 | Description                                    |
+| ------------------------- | ---------------------------------------------- |
+| **Azure Functions**       | Serverless automation tasks                    |
+| **Azure Blob Storage**    | Archive HTML reports                           |
+| **Azure Logic Apps**      | Real-time notifications to stakeholders        |
+| **Terraform & Azure CLI** | Infrastructure provisioning and automation     |
+| **Managed Identity**      | Secure access with zero hard-coded credentials |
+| **Lifecycle Management**  | Automated cleanup of unused resources          |
 
 ### Architecture Diagram
 
-![NexusFlow Architecture](1735316588109.jpeg "NexusFlow Architecture")
-*Figure: Multi-layered AI-powered supply chain architecture on Huawei Cloud*
+![Workflow](bd681a09-3742-41d1-8cff-6ef3b302d898.png "Azure FinOps Workflow")
+*Figure: Serverless automation and cost optimization workflow*
 
 ---
 
 ## ⚙️ Tech Stack
 
-| Category             | Tools & Services                                          |
-| -------------------- | --------------------------------------------------------- |
-| **Cloud**            | Huawei Cloud (ECS, RDS, OBS, ModelArts, API Gateway, WAF) |
-| **Language**         | Python                                                    |
-| **Containerization** | Docker                                                    |
-| **Automation**       | CI/CD Pipelines                                           |
-| **Framework**        | Well-Architected Framework                                |
+| Category       | Tools & Services                                                            |
+| -------------- | --------------------------------------------------------------------------- |
+| **Cloud**      | Microsoft Azure (Functions, Blob Storage, Logic Apps, Lifecycle Management) |
+| **Language**   | Python                                                                      |
+| **Serverless** | Azure Functions                                                             |
+| **Automation** | Terraform, Azure CLI, Logic Apps                                            |
+| **Focus**      | Cloud Security, FinOps / Cost Management                                    |
 
 ---
 
@@ -66,42 +63,36 @@ The architecture is designed for **security, scalability, and performance**:
 ### 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/NexusFlow.git
-cd NexusFlow
+git clone https://github.com/YOUR_USERNAME/Azure-FinOps-Sentinel.git
+cd Azure-FinOps-Sentinel
 ```
 
-### 2️⃣ Provision Infrastructure
+### 2️⃣ Deploy Infrastructure
 
-*(Add Terraform/CloudFormation steps if used)*
+```bash
+terraform init
+terraform plan
+terraform apply
+```
 
-### 3️⃣ Run AI Services
+### 3️⃣ Run Sentinel Function
 
 ```bash
 pip install -r requirements.txt
-python run_forecasting.py
+func start
 ```
 
-### 4️⃣ Deploy Microservices
+### 4️⃣ View Reports
 
-```bash
-docker-compose up -d
-```
-
----
-
-## 🌐 Usage
-
-* Real-time supply chain monitoring and AI forecasting.
-* Automated inventory adjustments and alerting.
-* Secure file storage and API-driven data ingestion.
+* Reports stored in **Azure Blob Storage**
+* Notifications sent via **Azure Logic Apps**
 
 ---
 
 ## 📊 Performance Highlights
 
-* ✅ 99.95% system availability
-* ✅ 25% reduction in stockouts & overstock
-* ✅ 20% operational cost reduction
+* ✅ Automated detection and tagging of unused resources
+* ✅ Real-time reporting and notifications
 
 ---
 
